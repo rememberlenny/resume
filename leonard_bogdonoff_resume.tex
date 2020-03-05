@@ -1,0 +1,185 @@
+%-------------------------
+% Resume in Latex
+% Author : Leonard Kiyoshi Bogdonoff
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://rememberlenny.com/}{\Large Leonard Kiyoshi Bogdonoff}} & Email : \href{mailto:rememberlenny@gmail.com}{rememberlenny@gmail.com}\\
+  \href{http://rememberlenny.com/}{http://www.rememberlenny.com} & Mobile : +1-949-322-8496 \\
+\end{tabular*}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Google - Material design}{New York, NY}
+      {Product engineer}{Oct 2018 - Present}
+      \resumeItemListStart
+        \resumeItem{fonts.google.com redesign}
+          {First UI update for fonts.google.com in three years.}
+        \resumeItem{Search and filtering UI}
+          {Updated interface for searching and filtering fonts.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Comet.ml}{New York, NY}
+      {Senior frontend engineer}{Feb 2018 - Oct 2018}
+      \resumeItemListStart
+        \resumeItem{comet.ml app rewrite}
+          {Restructured codebase for multiple engineers to contribute simultaneously.}
+        \resumeItem{Search UI}
+          {Faceted search interface using Postgres filter-predicates that evolved into a project dashboard builder.}
+        \resumeItem{Frontend design system}
+          {Established common patterns for contributing CSS and frontend components.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {18f.gsa.gov}{Washington, DC}
+      {Innovation Specialist - Senior software engineer}{Jan 2016 and Jan 2018}
+      \resumeItemListStart
+        \resumeItem{regulations.atf.gov}
+          {Next.js application that makes federal regulation easier to find, read and understand.}
+        \resumeItem{cloud.gov}
+          {Built a browser-based user creation and new user invitation workflow for a Cloud Foundry app.}
+        \resumeItem{seedfund.nsf.gov}
+          {Prototyped eight Angular websites for user testing.}
+        \resumeItem{Communicart}
+          {A Ruby-on-rails accounting tool that allowed users to track expenses and approvals using email.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Conde Nast}{New York, NY}
+      {Senior software engineer}{Sep 2013 - Jan 2016}
+      \resumeItemListStart
+        \resumeItem{newyorker.com}
+          {Contributed on a team of six engineers to re-platform the newyorker.com.}
+        \resumeItem{bonappetit.com}
+          {Lead engineer on a team of two to re-platform the bonappetit.com.}
+        \resumeItem{wmagazine.com}
+          {Built a Backbone.js content browsing application for W Magazine content.}
+      \resumeItemListEnd
+
+
+    \resumeSubheading
+      {Converse APAC}{Shanghai, China}
+      {Project manager}{Winter 2012}
+      \resumeItemListStart
+        \resumeItem{converse.com.cn launch}
+          {Set timelines and engineering project tasks for an agency building converse.cn.com.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {iTalki}{Shanghai, China}
+      {Frontend developer}{Aug 2012 - Dec 2012}
+      \resumeItemListStart
+        \resumeItem{Marketing landing pages}
+          {Built marketing landing pages for social and search ad buying experiments.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Public art}
+      {Tracked millions of geo-tagged street art images from around the world.}
+    \resumeSubItem{Remind to read}
+      {Web embed for digital publishers to send email reminders to finish reading long text content.}
+    \resumeSubItem{Tell Me 'Bout It}
+      {A phone number/web app for listening to and sharing breakup stories.}
+  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Soka University of America}{Aliso Viejo, CA}
+      {Bachelor of Arts in Humanities}{2007 - 2012}
+    \resumeSubheading
+      {Shanghai University}{Shanghai, China}
+      {Chinese}{2012}
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
